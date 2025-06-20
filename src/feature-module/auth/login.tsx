@@ -3,7 +3,7 @@ import ImageWithBasePath from "../../core/common/imageWithBasePath";
 import { Link } from "react-router-dom";
 import { all_routes } from "../router/all_routes";
 const Login = () => {
-  const route = all_routes;
+ const route = all_routes;
   const [isPasswordVisible, setPasswordVisible] = useState(false);
 
   const togglePasswordVisibility = () => {
@@ -67,24 +67,24 @@ const Login = () => {
                   </label>
                 </div>
                 <div className="text-end">
-                  <Link
+                  {/* <Link
                     to={route.forgotPassword}
                     className="text-primary fw-medium link-hover"
                   >
                     Forgot Password?
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
               <div className="mb-3">
                 <Link
-                to="/"
-                  // to={route.dealsDashboard}
+               
+                  to={route.superadminDashboard}
                   className="btn btn-primary w-100"
                 >
                   Sign In
                 </Link>
               </div>
-              <div className="mb-3">
+              {/* <div className="mb-3">
                 <h6>
                   New on our platform?
                   <Link to={route.register} className="text-purple link-hover">
@@ -92,12 +92,12 @@ const Login = () => {
                     Create an account
                   </Link>
                 </h6>
-              </div>
-              <div className="form-set-login or-text mb-3">
+              </div> */}
+              {/* <div className="form-set-login or-text mb-3">
                 <h4>OR</h4>
-              </div>
+              </div> */}
               <>
-                <div className="d-flex align-items-center justify-content-center flex-wrap mb-3">
+                {/* <div className="d-flex align-items-center justify-content-center flex-wrap mb-3">
                   <div className="text-center me-2 flex-fill">
                     <Link
                       to="#"
@@ -134,9 +134,9 @@ const Login = () => {
                       />
                     </Link>
                   </div>
-                </div>
+                </div> */}
                 <div className="text-center">
-                  <p className="fw-medium text-gray">Copyright © 2024 - CRMS</p>
+                  <p className="fw-medium text-gray">Copyright © 2025 - Ziplofy-CRMS</p>
                 </div>
               </>
             </div>
